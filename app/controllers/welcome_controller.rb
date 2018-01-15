@@ -1,6 +1,10 @@
 class WelcomeController < ApplicationController
 
   def index
-    render html: "hello, world!"
+    if current_user
+      render html: "hello, world!"
+    else
+      redirect_to :new_user_session_path
+    end
   end
 end
