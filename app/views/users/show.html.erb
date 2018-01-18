@@ -1,0 +1,14 @@
+<h1>Users#show</h1>
+<p>Find me in app/views/users/show.html.erb</p>
+
+    <p>
+      <strong>Name:</strong>
+      <%= @user.email %>
+    </p>
+    <p>
+      <label>My Profile Pic : </label>
+      <%= image_tag(@user.image_url) if @user.image? %>
+
+
+
+<%= link_to 'Edit User', edit_user_path(@user) %>

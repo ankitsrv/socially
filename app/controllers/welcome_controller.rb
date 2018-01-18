@@ -2,9 +2,11 @@ class WelcomeController < ApplicationController
 
   def index
     if current_user
-      render html: "hello, world!"
+      @user = current_user
+      render :template => 'users/show'
+      #render :users_show_path, :controller=> 'users'
     else
-      redirect_to :new_user_session_path
+      redirect_to :login
     end
   end
 end

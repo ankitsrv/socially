@@ -11,7 +11,8 @@ gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '~> 0.18.4'
 # gem 'sqlite3'
-
+# for image uploading
+gem 'carrierwave', '~> 1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # for authentication
