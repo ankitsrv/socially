@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  post 'friendships/create'
+  delete 'friendships/destroy'
+
   resources :comments
   resources :posts
   resources :users

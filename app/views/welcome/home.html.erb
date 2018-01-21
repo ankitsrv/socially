@@ -1,5 +1,6 @@
 
 <% if current_user %>
     <%= link_to 'Posts', :posts, method: :get %><br>
-    <%= link_to 'User Profile', user_path(current_user), method: :get %>
+    <%= link_to 'User Profile', user_path(current_user), method: :get %><br>
+    <%= link_to 'Friends', :users, method: :get %><br>
 <% end %>
